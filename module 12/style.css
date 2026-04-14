@@ -1,0 +1,48 @@
+h1 {
+    color: aquamarine;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px pink;
+
+}
+
+p {
+    text-indent: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: horizontal-tb;
+}
+
+h2{
+    text-decoration: overline;
+}
+
+h3{
+    text-decoration: line-through;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h4{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.myElement{
+    color:blue !important
+}
+
+#Normaltext{
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Italictext{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#Obliquetext{
+    font-style: oblique;
+    font-weight: 900;
+}
