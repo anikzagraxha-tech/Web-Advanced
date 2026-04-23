@@ -1,0 +1,49 @@
+article p{
+    background-color: aquamarine;
+    padding: 20px;
+    color: black;
+}
+
+article > p{
+    background: red;
+}
+
+article ~ p{
+
+    background-color:pink ;
+    padding:16.9%;
+    color: black;
+}
+
+article + p{
+    background-color: orange;
+    padding: 20px;
+    color: black;
+}
+
+h3{
+    background-color: #F2E205;
+    color: #F20519;
+}
+
+input:in-range{
+    border: 3px solid green;
+}
+
+input:out-of-range{
+    border: 3px solid red;
+}
+
+input:required{
+    background-color: #9ee5f0;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+span:first-of-type{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
