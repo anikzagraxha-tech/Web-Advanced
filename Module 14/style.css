@@ -47,3 +47,44 @@ span:first-of-type{
     color: white;
     padding: 10px;
 }
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input{
+    padding: 8px;
+    margin: 10px;
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::first-letter{
+    color: red;
+}
+
+.b::before{
+
+}
+
+.b::after{
+
+}
+
+ ::selection{
+    background-color: yellow;
+    color: black;
+}
+
+.box{
+    background-color: orange;
+    padding:20px;
+    margin: 10px;
+    opacity: 1;
+}
