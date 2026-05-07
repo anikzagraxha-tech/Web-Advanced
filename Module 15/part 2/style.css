@@ -102,3 +102,44 @@ li a:hover:not(.active){
 .column a:hover{
     background-color: #ddd;
 }
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#vertical-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: pink;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+
+#vertical-menu li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+
+
+}
+
+
+#vertical-menu li a.active{
+    background-color: aquamarine;
+    color: white;
+}
+
+#vertical-menu li a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+
