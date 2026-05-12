@@ -18,3 +18,49 @@ div.desc{
     padding: 15px;
     text-align: center;
 }
+
+.sprite{
+    background: url("img/houses.png")no-repeat;
+}
+
+.shadows{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: -500px -500px;
+
+}
+
+.engineers{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: 0px 0px;
+
+}
+
+a[href="http://shkolladigjitale.com/"]{
+    color: navy;
+}
+
+p[class*="ds"]{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+div[id~="ds"]{
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+img[title^="blue"]{
+    border: 2px solid blue;
+}
+
+h1[class|=heading]{
+    background-color: purple;
+    padding: 20px;
+    color: white;
+}
