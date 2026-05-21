@@ -1,0 +1,121 @@
+:root{
+    --primary-color: #06206a;
+    --secondary-color:#fff;
+    --padding:20px;
+}
+
+h1{
+    background-color: var(--primary-color) ;
+    color: var(--secondary-color);
+    padding: var(--padding);
+}
+
+p{
+     background-color: var(--primary-color) ;
+    color: var(--secondary-color);
+    padding: var(--padding);
+}
+
+#example-one{
+    border-radius: 10px;
+    background: #BADA55;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+#example-two{
+    border-radius: 10px;
+    border: 3px solid #BADA55;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+#example-three {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: url(../bglines.png); 
+}
+
+#example-four{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px 60px 5px;
+    background: #BADA55;
+    
+}
+
+#example-five{
+    border-radius: 10px / 30px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: pink;
+}
+
+#example-six{
+    border-radius: 30px/ 10px;
+    margin: 10px;
+    background-color: pink;
+    
+}
+
+.example{
+    margin-bottom: 30px;
+}
+
+.example h2{
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.border-image-demo{
+    border: 25px solid transparent;
+    border-image:url('olise.avif') 25 25 round;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.bg-demo{
+    background-color: url(muller.webp) top center / 200px 200px no-repeat #ff6b9d;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.multi-bg-demo{
+    background: 
+    url('muller.webp') no-repeat top left /100px 100px,
+    url('muller.webp') repeat,
+    #6f27cd;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    counter-reset: number;
+}
+
+h2::before{
+    counter-increment:number ;
+    content: counter(number);
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 12px;
+    color: aqua;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
