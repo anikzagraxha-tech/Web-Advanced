@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1{
+    margin: 30px;
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5;
+}
+
+.translate:hover{
+    transform: translate(30px,20px);
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.scale:hover{
+    transform: scale(1.5,1.2);
+}
+
+.scalex:hover{
+    transform: scaleX(1.8);
+}
+
+.scaley:hover{
+    transform: scaleY(1.8);
+}
+
+.skewx:hover:hover{
+    transform: skewx(25deg);
+}
+
+.scewy:hover{
+    transform: scewY(25deg);
+}
+
+.rotatex:hover{
+    transform: rotateX('angle');
+}

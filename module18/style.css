@@ -1,0 +1,16 @@
+#photo1 img{ 
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+#photo1:hover img{
+    transform: scale(1,3);
+}
+
+#photo2:hover img{
+    filter: blur(3px);
+    transition: .3 ease-in-out;
+}
+
+#photo3:hover img{
+    filter: blur(0);
+}
