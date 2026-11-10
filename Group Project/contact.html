@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakti | SPORTIVA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="top-bar">SPORTIVA - GEAR UP. GET ACTIVE.</div>
+
+<header class="header">
+  <a href="index.html" class="logo">SPORT<span>IVA.</span></a>
+  <nav>
+    <a href="index.html">Ballina</a>
+    <a href="products.html">Produktet</a>
+    <a href="contact.html">Kontakti</a>
+  </nav>
+  <div class="header-actions">
+    <input type="search" id="globalSearch" placeholder="Kërko produkte...">
+    <button class="cart-button" onclick="toggleCart()">
+      🛒 <span id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="contact-hero">
+    <p class="eyebrow">JEMI KËTU PËR TY</p>
+    <h1>Na kontakto.</h1>
+    <p>Ke ndonjë pyetje? Ekipi ynë është gati të të ndihmojë.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Informata kontaktuese</h2>
+      <p>📍 Prishtinë, Kosovë</p>
+      <p>📞 +383 44 000 000</p>
+      <p>✉️ info@sportiva.com</p>
+      <p>🕒 E hënë - E shtunë: 09:00 - 20:00</p>
+
+      <h3>Orari ynë</h3>
+      <table>
+        <tr><th>Dita</th><th>Orari</th></tr>
+        <tr><td>E hënë - E premte</td><td>09:00 - 20:00</td></tr>
+        <tr><td>E shtunë</td><td>10:00 - 18:00</td></tr>
+        <tr><td>E diel</td><td>Mbyllur</td></tr>
+      </table>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <h2>Dërgo mesazh</h2>
+
+      <label>Emri i plotë</label>
+      <input type="text" id="name" placeholder="Shkruaj emrin" required>
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="example@email.com" required>
+
+      <label>Subjekti</label>
+      <select id="subject" required>
+        <option value="">Zgjedh subjektin</option>
+        <option>Pyetje rreth produkteve</option>
+        <option>Porosi</option>
+        <option>Kthim produkti</option>
+        <option>Tjetër</option>
+      </select>
+
+      <label>Mesazhi</label>
+      <textarea id="message" rows="5" placeholder="Shkruaj mesazhin..." required></textarea>
+
+      <button type="submit" class="main-button">DËRGO MESAZHIN →</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h2 class="logo">SPORT<span>IVA.</span></h2><p>Sporti fillon me ty.</p></div>
+    <div><h3>Eksploro</h3><a href="index.html">Ballina</a><a href="products.html">Produktet</a></div>
+    <div><h3>Ndihmë</h3><a href="contact.html">Kontakti</a></div>
+    <div><h3>Na kontakto</h3><p>info@sportiva.com</p><p>Prishtinë, Kosovë</p></div>
+  </div>
+  <p class="copyright">© 2026 SPORTIVA. All rights reserved.</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <button class="close-cart" onclick="toggleCart()">✕</button>
+  <h2>Shporta ime</h2>
+  <div id="cartItems"></div>
+  <h3>Totali: <span id="cartTotal">0.00€</span></h3>
+  <button class="main-button checkout" onclick="checkout()">VAZHDO</button>
+</aside>
+
+</body>
+</html>

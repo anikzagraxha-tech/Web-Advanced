@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPORTIVA | Sport Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="top-bar">
+    SPORTIVA - GEAR UP. GET ACTIVE. LIVE BETTER.
+</div>
+
+<header class="header">
+    <a href="index.html" class="logo">SPORT<span>IVA.</span></a>
+
+    <nav>
+        <a href="index.html">Ballina</a>
+        <a href="products.html">Produktet</a>
+        <a href="contact.html">Kontakti</a>
+    </nav>
+
+    <div class="header-actions">
+        <input type="search" id="globalSearch" placeholder="Kerko produkte...">
+        <button class="cart-button" onclick="togglerCart()">
+            🛒 <span id="cartCount">0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">KOLEKSIONI I RI 2026</p>
+            <h1>MOVE MORE.<BR>LIVE BETTER.</h1>
+            <p>Paisjet e duhura per cdo sport dhe cdo aventure</p>
+            <a href="products.html" class="main-button">BLEJ TANI →</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">GJENDE GJIQKA</p>
+                <h2>Eksploro sportet</h2>
+            </div>
+            <a href="products.html" class="view-link">Shiko te gjita →</a>
+        </div>
+
+        <div class="category-grid">
+            <a href="products.html?category=Fitness" class="category-card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700" alt="Fitness">
+            <h3>FITNESS</h3>
+            </a>
+
+            <a href="products.html?category=Running" class="category-card">
+            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=700" alt="Running">
+            <h3>RUNNING</h3>
+            </a>
+
+            <a href="products.html?category=Hiking" class="category-card">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=700" alt="Hiking">
+            <h3>HIKING</h3>
+            </a>
+
+            <a href="products.html?category=Football" class="category-card">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=700" alt="Football">
+            <h3>FOOTBALL</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div>
+            <p class="eyebrow">SPORTI ËSHTË PËR TË GJITHË</p>
+            <h2>Gati për aventurën e radhës?</h2>
+            <p>Zbulo pajisjet që të ndihmojnë të arrish më shumë.</p>
+            <a href="products.html" class="main-button">EKSPLORO PRODUKTET</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+        <div>
+            <p class="eyebrow">ZGJEDHJET TONA</p>
+            <h2>Produktet më të shitura</h2>
+        </div>
+            <a href="products.html" class="view-link">Shiko të gjitha →</a>
+        </div>
+
+        <div class="product-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="price-section">
+        <h2>Bli sipas buxhetit</h2>
+        <p>Produkte sportive për çdo xhep.</p>
+    <div class="price-buttons">
+        <a href="products.html?max=10">DERI NË 10€</a>
+        <a href="products.html?max=30">DERI NË 30€</a>
+        <a href="products.html?max=50">DERI NË 50€</a>
+    </div>
+    </section>
+
+    <section class="benefits">
+    <div>🚚 <h3>Dërgesë e shpejtë</h3><p>Brenda 2-4 ditëve</p></div>
+    <div>↩️ <h3>Kthim i lehtë</h3><p>15 ditë afat kthimi</p></div>
+    <div>🔒 <h3>Pagesë e sigurt</h3><p>Siguri në çdo porosi</p></div>
+    <div>⭐ <h3>Cilësi e garantuar</h3><p>Për çdo aktivitet sportiv</p></div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <h2 class="logo">SPORT<span>IVA.</span></h2>
+            <p>Sporti fillon me ty. Ne të pajisim për çdo sfidë.</p>
+        </div>
+        <div>
+            <h3>Eksploro</h3>
+            <a href="index.html">Ballina</a>
+            <a href="products.html">Produktet</a>
+            <a href="contact.html">Kontakti</a>
+        </div>
+        <div>
+            <h3>Kategoritë</h3>
+            <a href="products.html">Fitness</a>
+            <a href="products.html">Running</a>
+            <a href="products.html">Hiking</a>
+        </div>
+        <div>
+            <h3>Na kontaktoni</h3>
+            <p>info@sportiva.com</p>
+            <p>Prishtinë, Kosovë</p>
+            <p>+383 44 000 000</p>
+        </div>
+    </div>
+        <p class="copyright">© 2026 SPORTIVA. All rights reserved.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+        <aside class="cart-drawer" id="cartDrawer">
+        <button class="close-cart" onclick="toggleCart()">✕</button>
+        <h2>Shporta ime</h2>
+        <div id="cartItems"></div>
+        <h3>Totali: <span id="cartTotal">0.00€</span></h3>
+        <button class="main-button checkout" onclick="checkout()">VAZHDO</button>
+    </aside>
+    
+</main>
+</body>
+</html>

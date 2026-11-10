@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 60px 30px;
+    border-radius: 10px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #343a40 !important;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+}

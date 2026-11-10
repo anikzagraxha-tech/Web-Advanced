@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produktet | SPORTIVA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="top-bar">SPORTIVA - GEAR UP. GET ACTIVE.</div>
+
+<header class="header">
+  <a href="index.html" class="logo">SPORT<span>IVA.</span></a>
+  <nav>
+    <a href="index.html">Ballina</a>
+    <a href="products.html">Produktet</a>
+    <a href="contact.html">Kontakti</a>
+  </nav>
+  <div class="header-actions">
+    <input type="search" id="globalSearch" placeholder="Kërko produkte...">
+    <button class="cart-button" onclick="toggleCart()">
+      🛒 <span id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main class="shop-page">
+  <div class="shop-banner">
+    <p class="eyebrow">KOLEKSIONI SPORTIV</p>
+    <h1>Gjej pajisjet e tua.</h1>
+    <p>Cilësi, rehati dhe performancë në çdo hap.</p>
+  </div>
+
+  <div class="shop-layout">
+    <aside class="filters">
+      <h3>Filtro produktet</h3>
+
+      <label>Kategoria</label>
+      <select id="categoryFilter">
+        <option value="All">Të gjitha</option>
+        <option value="Fitness">Fitness</option>
+        <option value="Running">Running</option>
+        <option value="Hiking">Hiking</option>
+        <option value="Football">Football</option>
+      </select>
+
+      <label>Rendit sipas çmimit</label>
+      <select id="sortFilter">
+        <option value="default">Standard</option>
+        <option value="low">Çmimi: i ulët - i lartë</option>
+        <option value="high">Çmimi: i lartë - i ulët</option>
+      </select>
+
+      <label>Çmimi maksimal</label>
+      <input type="range" id="priceFilter" min="5" max="150" value="150">
+      <p>Deri në <span id="priceValue">150</span>€</p>
+
+      <button class="main-button filter-button" onclick="resetFilters()">
+        PASTRO FILTRAT
+      </button>
+    </aside>
+
+    <section class="shop-products">
+      <div class="shop-heading">
+        <h2>Të gjitha produktet</h2>
+        <span id="resultCount"></span>
+      </div>
+      <div class="product-grid" id="allProducts"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h2 class="logo">SPORT<span>IVA.</span></h2><p>Sporti fillon me ty.</p></div>
+    <div><h3>Eksploro</h3><a href="index.html">Ballina</a><a href="products.html">Produktet</a></div>
+    <div><h3>Ndihmë</h3><a href="contact.html">Kontakti</a><a href="contact.html">Informata</a></div>
+    <div><h3>Kontakt</h3><p>info@sportiva.com</p><p>Prishtinë, Kosovë</p></div>
+  </div>
+  <p class="copyright">© 2026 SPORTIVA. All rights reserved.</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <button class="close-cart" onclick="toggleCart()">✕</button>
+  <h2>Shporta ime</h2>
+  <div id="cartItems"></div>
+  <h3>Totali: <span id="cartTotal">0.00€</span></h3>
+  <button class="main-button checkout" onclick="checkout()">VAZHDO</button>
+</aside>
+
+</body>
+</html>
